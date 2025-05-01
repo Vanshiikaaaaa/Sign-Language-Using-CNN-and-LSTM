@@ -87,7 +87,7 @@ Once the model finishes training, it will automatically open the webcam feed. Th
 
 ---
 
-## 🖼️ Screenshots
+## Output Demo
 - correct detection of the class "hello"
 ![image](https://github.com/user-attachments/assets/b38e7c61-1396-40ee-a2c0-9658716cbcc5)
 - 📊Model Accuracy and loss during training
