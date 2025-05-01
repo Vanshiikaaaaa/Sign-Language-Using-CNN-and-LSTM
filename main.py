@@ -87,7 +87,7 @@ model.compile(optimizer='Adam', loss='categorical_crossentropy', metrics=['categ
 # Train the model
 model.fit(X_train, y_train, epochs=30, callbacks=[tb_callback])
 
-# **Evaluation: Compute Precision, Recall, and F1-score**
+# *Evaluation: Compute Precision, Recall, and F1-score*
 y_pred = model.predict(X_test)
 y_pred_labels = np.argmax(y_pred, axis=1)
 y_true_labels = np.argmax(y_test, axis=1)
@@ -97,7 +97,7 @@ print("Classification Report:\n", classification_report(y_true_labels, y_pred_la
 # Confusion matrix
 conf_matrix = confusion_matrix(y_true_labels, y_pred_labels)
 
-# **Visualizing Confusion Matrix**
+# *Visualizing Confusion Matrix*
 plt.figure(figsize=(6, 4))
 sns.heatmap(conf_matrix, annot=True, fmt='d', cmap='Blues', xticklabels=actions, yticklabels=actions)
 plt.xlabel('Predicted')
@@ -139,7 +139,7 @@ with mp_holistic.Holistic(min_detection_confidence=0.5, min_tracking_confidence=
             if len(sentence) > 5:
                 sentence = sentence[-5:]
             
-            # image = prob_viz(res, actions, image, colors)
+            image = prob_viz(res, actions, image, colors)
 
         cv2.rectangle(image, (0,0), (1200, 40), (245, 117, 16), -1)
         cv2.putText(image, ' '.join(sentence), (3,30), cv2.FONT_HERSHEY_SIMPLEX, 1, (255,255,255), 2, cv2.LINE_AA)
