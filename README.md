@@ -94,10 +94,10 @@ Once the model finishes training, it will automatically open the webcam feed. Th
 ![WhatsApp Image 2025-03-29 at 17 51 24_c9d3a8d4](https://github.com/user-attachments/assets/26a8cd9e-9b4e-44aa-b4b7-275f1c4eb4a9)
 
 ## Troubleshooting
-1. Webcam not opening or not detecting gestures:
-Make sure your camera is properly connected and accessible.
-If you're using an external webcam, check that it is selected in your system.
-Try closing other applications that may be using the webcam.
+1. Webcam not opening or not detecting gestures: 
+  Make sure your camera is properly connected and accessible.
+  If you're using an external webcam, check that it is selected in your system.
+  Try closing other applications that may be using the webcam.
 
 3. Dependencies not installed:
 If you encounter errors regarding missing dependencies like imutils, ensure you've installed everything with:
