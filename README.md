@@ -76,13 +76,13 @@ MP_Data/
 
 
 ```
-## Step 2: Training the Model
+### Step 2: Training the Model
 Now that your dataset is organized, it's time to train the model. To do this, run the following command:
  ```bash
 python main.py
 ```
 
-## Step 3: Start Real-Time Gesture Recognition
+### Step 3: Start Real-Time Gesture Recognition
 Once the model finishes training, it will automatically open the webcam feed. This will allow you to perform gestures in front of the camera for real-time predictions. The model will recognize the gestures and display the corresponding text output.
 
 ---
